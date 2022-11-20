@@ -2,7 +2,7 @@ import s from './ContactForm.module.css';
 import { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { getContacts } from 'redux/contactsSlice/contactsSelectors';
-import { addContact } from 'redux/contactsSlice/contactsSlice';
+import { addContact } from 'utils/mockapiApi';
 
 const ContactForm = () => {
   const dispatch = useDispatch();

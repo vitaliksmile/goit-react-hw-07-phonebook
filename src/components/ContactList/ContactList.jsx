@@ -1,10 +1,10 @@
 import s from './ContactList.module.css';
 import { useDispatch, useSelector } from 'react-redux';
-import { removeContact } from '../../redux/contactsSlice/contactsSlice';
 import {
   getContacts,
   getContactsFilter,
 } from '../../redux/contactsSlice/contactsSelectors';
+import { removeContact } from 'utils/mockapiApi';
 
 const ContactList = () => {
   const dispatch = useDispatch();
